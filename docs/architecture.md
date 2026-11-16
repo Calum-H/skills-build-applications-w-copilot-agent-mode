@@ -6,9 +6,9 @@ OctoFit Tracker is a three-tier application for a school fitness program. The st
 
 ## Tier boundaries
 
-- **Presentation tier**: React 19, Vite, React Router, Bootstrap, and a shared API client in `octofit-tracker/frontend/src`.
-- **Logic tier**: Express and TypeScript routes/services in `octofit-tracker/backend/src` expose `/api/*` behavior on port `8000`.
-- **Data tier**: Mongoose models and seed data in `octofit-tracker/backend/src/models` and `src/scripts/seed.ts` persist to MongoDB on port `27017`.
+- **Presentation tier**: React 19 + Vite in octofit-tracker/frontend/src. It fetches from relative /api routes and renders the activity, teams, leaderboard, and workout screens.
+- **Logic tier**: Express + TypeScript routes/services in octofit-tracker/backend/src. This is the API layer on port 8000.
+- **Data tier**: Mongoose models and seed logic in octofit-tracker/backend/src/models and octofit-tracker/backend/src/scripts/seed.ts, using MongoDB on port 27017.
 
 ## Ports and environment rules
 
